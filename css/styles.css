@@ -168,6 +168,56 @@ body {
   border-right: 1px solid #ffffff1e;
   grid-area: side;
   border-radius: 0 0 0 1rem;
+  overflow-y: scroll;
+  padding-bottom: 2rem;
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar::-webkit-scrollbar {
+  width: 3px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: none;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #ffffff1e;
+}
+
+.sidebar .component {
+  margin-top: 1.5rem;
+}
+
+.sidebar .component h2 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #ffffff63;
+  margin-left: 2rem;
+}
+
+.sidebar .component .side-links_container {
+  margin-top: 0.7rem;
+  padding: 0 1.5rem;
+}
+
+.sidebar .side-links_container .side-link {
+  color: #fff;
+  font-weight: 200;
+  font-size: 0.9rem;
+  margin-top: 0.7rem;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidebar .side-links_container .side-link:hover {
+  background-color: #ffffff33;
+}
+
+.sidebar .side-links_container .side-link span {
+  margin-left: 0.5rem;
 }
 
 .main {
