@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.grid-container {
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(5, 0, 7, 0.322),
+    rgba(7, 2, 29, 0.486)
+  );
+  backdrop-filter: blur(40px);
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  top: 1em;
+
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 70px 75px 1fr;
+  grid-template-areas:
+    "header header"
+    "side main"
+    "side main"
+    "side main";
+}
+
+.header {
+  border-bottom: 1px solid #ffffff1e;
+  grid-area: header;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.sidebar {
+  border-right: 1px solid #ffffff1e;
+  grid-area: side;
+  border-radius: 0 0 0 1rem;
+}
+
+.main {
+  grid-area: main;
+  border-radius: 0 0 1rem 0;
+}
